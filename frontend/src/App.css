@@ -1,0 +1,12 @@
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.danger {
+    color: #ef4444;
+}

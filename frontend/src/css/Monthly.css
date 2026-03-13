@@ -1,0 +1,261 @@
+.backToHome {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.backToHome p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.backToHome p span {
+  display: block;
+  font-size: 1.2rem;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.monthlyPage {
+  min-height: 100vh;
+  background-color: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== 上部カード ===== */
+
+.monthlyCards {
+  margin: 0 auto 2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.monthlyCards .arrow {
+  width: 5%;
+  display: block;
+}
+
+.monthlyCards .arrow span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.monthlyCards .arrow span:nth-child(1) {
+  font-size: 3rem;
+}
+
+.monthlyCards .arrow span:nth-child(2) {
+  font-size: 1rem;
+}
+
+.monthlyCards .card {
+  width: 48%;
+  background: white;
+  border-radius: 15px;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mainTotal .cardAmount {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.cardTitle span {
+  font-size: 1.2rem;
+  margin-left: .5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.cardTitle span:hover {
+  color: red;
+}
+
+.carryCard {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.cardSubTitle {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.carryAmount {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.addTransaction {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.addTransaction input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+.addTransaction button {
+  padding: 0.5rem 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.storeInputWrapper {
+  position: relative;
+  width: 200px;
+}
+
+.storeInputWrapper input {
+  padding-right: 28px;
+}
+
+.clearButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #999;
+}
+
+.clearButton:hover {
+  color: #333;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+  margin-top: 4px;
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f3f4f6;
+}
+
+/* ===== テーブル ===== */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+table th {
+  background-color: #f1f3f6;
+  height: 3rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+table th:nth-child(1) { width: 20%; }
+table th:nth-child(2) { width: 30%; }
+table th:nth-child(3) { width: 20%; }
+table th:nth-child(4) { width: 20%; }
+table th:nth-child(5) { width: 10%; }
+
+
+table td {
+  padding: 0.75rem;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+  transition: 0.2s;
+}
+
+table td:nth-child(5) {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #4f46e5;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  min-height: 400px;
+  width: 80%;
+  margin: 0 auto 3rem auto;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.modalContent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent h2 .deleteMenu {
+  font-size: 1rem;
+  border: 2px solid red;
+  padding: 3px 8px;
+  transition: 0.2s;
+}
+
+.modalContent h2 .deleteMenu:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}

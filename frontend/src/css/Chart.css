@@ -1,0 +1,15 @@
+.chartButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chartButtons button {
+    display: block;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+}
+
+.chartButtons button:hover {
+    background: #ccc;
+    color: #FFFF;
+}
